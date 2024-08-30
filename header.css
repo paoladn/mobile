@@ -1,20 +1,81 @@
-.cabeçalho{
-    background-color: var(--branco);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alurabooks</title>
+    <link rel="stylesheet" href="reset.css">  
+    <link rel=”preconnect” href=”https://fonts.googleapis.com”>
+    <link rel=”preconnect” href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+        <span class="cabeçalho__menu-hamburguer"></span>
+        <img src="img/Logo.svg" alt="Logo da Alurabooks">
+    </div>
+    <div class="container">
+        <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"></a>
+        <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras"></a>
+        <a href="#"><img last monthsrc="img/Usuario.svg" alt="Meu perfil"></a>
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu">
+        <span class="cabeçalho_ menu hamburguer container__imagem"></span>
+        <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+          </label>
+          <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+                </ul>
+              </ul>
+        
+          <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container_imagem">
+     </div>
+</header>
+<section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="banner__pesquisa"placeholder="Qual será sua próxima leitura?">
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+            <div class="swiper-slide"><img src="img/ApacheKafkasvg"alt="Livro sobre apache Kafka e spring boot da AluraBooks"></div>
+            <div class="swiper-slide"> <img src="img/Javascript.svg"alt="Livro sobre JavaScript da AluraBooks"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da AluraBooks"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </section>
+        <script>
+         
 
-}
-    .lista-menu__titulo {
-    color: var(--laranja);
-    font-weight: 700;
-    }
-    .lista-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        width: 60vw;
-        }
-    
-   
+       <body/>
